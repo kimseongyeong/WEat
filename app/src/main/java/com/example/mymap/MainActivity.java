@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     
@@ -55,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
     //enter버튼 클릭 시 타이틀과 컨텐츠 PActivity로 전달
     public void onCallBtnEnter(View v)
     {
+        Toast.makeText(getApplicationContext(), "등록 완료!", Toast.LENGTH_LONG).show();
+
         String title = et_title.getText().toString();
         String contents = et_contents.getText().toString();
 

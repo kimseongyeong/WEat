@@ -18,7 +18,7 @@
             android:id="@+id/et_category"
             android:layout_width="90dp"
             android:layout_height="30dp"
-
+            android:fontFamily="@font/gmarketsansmedium"
             android:text="CATEGORY"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
@@ -35,27 +35,30 @@
 
     <EditText
         android:id="@+id/et_title"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="제목 입력 ex)엽기떡볶이 동대문점"
         android:inputType="text"
+        android:fontFamily="@font/gmarketsanslight"
         android:textColor="@android:color/black"
-        android:textSize="21sp"
-        android:textStyle="bold" />
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
 
     <EditText
         android:id="@+id/et_contents"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_marginTop="20dp"
         android:padding="10dp"
         android:gravity="start|top"
         android:hint="내용을 입력하세요. ex)최소 주문금액 얼마"
         android:inputType="textMultiLine"
+        android:fontFamily="@font/gmarketsanslight"
         android:textAllCaps="false"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:textStyle="normal" />
 
     <LinearLayout
@@ -72,6 +75,8 @@
             android:layout_marginRight="40dp"
             android:shadowColor="#FFFFFF"
             android:text="뒤로가기"
+            android:fontFamily="@font/gmarketsanslight"
+
             />
 
         <Button
@@ -80,7 +85,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:onClick="onCallBtnEnter"
-            android:text="게시하기" />
+            android:text="게시하기"
+            android:fontFamily="@font/gmarketsanslight"
+            />
     </LinearLayout>
 
 

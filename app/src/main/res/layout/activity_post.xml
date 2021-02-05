@@ -17,7 +17,9 @@
             android:layout_width="130dp"
             android:layout_height="90dp"
             android:background="#26A9A9A9"
-            android:text="카테고리" />
+            android:text="카테고리"
+            android:fontFamily="@font/gmarketsanslight"
+            />
 
 
         <LinearLayout
@@ -30,6 +32,7 @@
                 android:layout_width="130dp"
                 android:layout_height="30dp"
                 android:hint="게시날짜"
+                android:fontFamily="@font/gmarketsanslight"
                 android:textColor="#FF4C00"
                 android:textSize="14sp"
                 android:layout_gravity="right"/>
@@ -40,6 +43,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="0dp"
                 android:hint="제목"
+                android:fontFamily="@font/gmarketsansmedium"
                 android:textColor="#FF4C00"
                 android:textSize="21sp"
                 android:textStyle="bold"
@@ -56,6 +60,7 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/border"
         android:hint="내용"
+        android:fontFamily="@font/gmarketsanslight"
         android:shadowColor="#FFFFFF"
         android:padding="30dp"
         android:textColor="@android:color/black"
@@ -70,6 +75,8 @@
         android:layout_margin="20dp"
         android:inputType="textPersonName"
         android:hint="| 댓글을 입력하세요"
+        android:fontFamily="@font/gmarketsanslight"
+
         />
 
 
