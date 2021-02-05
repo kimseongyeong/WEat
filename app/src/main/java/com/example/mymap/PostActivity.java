@@ -6,9 +6,17 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class PostActivity extends AppCompatActivity {
 
-    TextView top, head, body;
+    TextView top, head, body, date;
+
+    long now = System.currentTimeMillis();
+    Date Pdate = new Date(now);
+    SimpleDateFormat mFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+    String formatDate = mFormat.format(Pdate);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +29,7 @@ public class PostActivity extends AppCompatActivity {
         top = findViewById(R.id.tv_category);
         head = findViewById(R.id.tv_title);
         body = findViewById(R.id.tv_contents);
+        date = findViewById(R.id.tv_time);
 
         Intent intent = getIntent();
 
@@ -30,14 +39,18 @@ public class PostActivity extends AppCompatActivity {
             String category = intent.getStringExtra("category");
             String title = intent.getStringExtra("title");
             String contents = intent.getStringExtra("contents");
+            //String date = intent.getStringExtra("date");
 
+            /*
             top = findViewById(R.id.tv_category);
             head = findViewById(R.id.tv_title);
             body = findViewById(R.id.tv_contents);
+            */
 
             top.setText(("카테고리: " +category));
-            head.setText(("제목: " +title));
+            head.setText((title));
             body.setText((contents));
+            date.setText(formatDate);
         }
 
     }
