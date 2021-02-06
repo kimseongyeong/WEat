@@ -31,6 +31,7 @@
             android:layout_height="30dp"
             android:padding="5dp"
             android:entries="@array/category" />
+
     </LinearLayout>
 
     <EditText
@@ -74,7 +75,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="40dp"
             android:shadowColor="#FFFFFF"
-            android:text="뒤로가기"
+            android:text="HOME"
+            android:onClick="onCallBtnHome"
             android:fontFamily="@font/gmarketsanslight"
 
             />

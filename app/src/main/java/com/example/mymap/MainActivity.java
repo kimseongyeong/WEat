@@ -1,8 +1,5 @@
 package com.example.mymap;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,12 +7,13 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     
-    private Spinner sp_category;
+    Spinner sp_category;
     EditText et_title;
     EditText et_contents;
     Button bt_back;
@@ -70,6 +68,13 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("contents", contents);
 
         intent.putExtra("type", 2);
+        startActivity(intent);
+
+    }
+
+    public void onCallBtnHome(View v) {
+
+        Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
 
     }

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:elevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gmarketsansbold"
+                android:textSize="17sp"
+                android:textColor="#FF4C00"
+                android:text="CATEGORY"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/gmarketsansmedium"
+                android:padding="5dp"
+                android:entries="@array/category"
+                android:id="@+id/spinner"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:hint="제목 입력 ex)엽기떡볶이 동대문점"
+                android:fontFamily="@font/gmarketsansmedium"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:id="@+id/edit_title"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:gravity="start|top"
+                android:hint="내용을 입력하세요. ex)최소 주문금액 얼마"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="5dp"
+                android:fontFamily="@font/gmarketsansmedium"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:id="@+id/edit_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:textColor="#ffffff"
+                    android:background="#FF4C00"
+                    android:text="뒤로가기"
+                    android:fontFamily="@font/gmarketsansbold"
+                    android:onClick="onClick"
+                    android:id="@+id/btn_back" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/gmarketsansbold"
+                    android:background="#FF4C00"
+                    android:text="게시하기"
+                    android:onClick="onClick"
+                    android:id="@+id/btn_enter"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:background="#FF4C00"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/btn_board"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/fe_board"
+                    android:onClick="onCallBtnBoard" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/btn_home"
+                    android:onClick="onCallBtnHome"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/fe_home" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/btn_newpost"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="onCallBtnNew"
+                    android:src="@drawable/str_pencil" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
