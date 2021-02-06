@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo"
+        android:layout_marginBottom="70dp"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_corner"
+        android:layout_marginBottom="7dp"
+        android:paddingLeft="50dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/gmarketsansmedium"
+        android:backgroundTint="#26A9A9A9"
+        android:hint="닉네임을 입력해주세요"
+        android:maxLength="5"
+        android:id="@+id/edit_name"/>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="#FF4C00"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/gmarketsansmedium"
+        android:elevation="50dp"
+        android:id="@+id/btn_login"/>
+
+
+<!--
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner"/>
+-->
+
+</LinearLayout>
